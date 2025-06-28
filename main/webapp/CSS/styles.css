@@ -1,0 +1,54 @@
+body {
+    background-color: #d0e7ff; /* soft blue background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+h2 {
+    text-align: center;
+    color: white;               /* white text to stand out on blue */
+    position: relative;         
+    z-index: 2;                 
+    margin: 0;
+    height: 40px;               
+    line-height: 20px; 
+    text-align: center;         
+    font-weight: bold;
+    padding: 0;                 
+}
+
+.banner {
+    background-color: #007bff;  /* bright blue */
+    height: 50px;               
+    width: 100%;
+    border-radius: 8px 8px 0 0; /* rounded top corners */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;                 /* behind h2 */
+}
+
+input[type="submit"] {
+    background-color: #0047ab; /* rich blue */
+    color: white;
+    border: none;
+    padding: 6px 12px;  
+    font-size: 0.9em;   
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;        
+}
+
+input[type="submit"]:hover {
+    background-color: #002f6c; /* darker blue on hover */
+}
+
