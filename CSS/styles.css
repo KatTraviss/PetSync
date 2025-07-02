@@ -1,0 +1,111 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;  /* clean white background */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;              /* full viewport height */
+}
+
+/* Container for the form */
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 2px solid #8BC34A;  /* soft green border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+/* Banner bar at the top */
+.banner {
+  background-color: #4CAF50; /* deep green */
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0; /* rounded top corners */
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Form padding */
+form {
+  padding: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button group container */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.main-button {
+  background-color: #8BC34A;  /* soft green */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  max-width: 120px;
+  text-align: center;
+}
+
+.main-button:hover {
+  background-color: #6a9c2e; /* deeper green on hover */
+  color: white;
+}
+
+/* Forgot password link */
+.forgot-password {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}

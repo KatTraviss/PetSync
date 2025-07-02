@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9; /* light dove grey */
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+}
+
+/* Main green banner */
+.main-header {
+  background-color: #8BC34A;
+  padding: 20px 0;
+  color: white;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Powered by PetSync bar */
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 10px 0 20px 0;
+  position: relative;
+}
+
+.powered-by::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #8BC34A;
+  z-index: 0;
+}
+
+.powered-by .logo {
+  width: 32px;
+  height: auto;
+}
+
+/* Button group for login/register/adopt/donate */
+.button-group {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button {
+  background-color: #8BC34A;
+  color: black;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6a9c2e;
+  color: white;
+  border-color: #6a9c2e;
+}
+
+/* Welcome text */
+.welcome-text p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 6px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section {
+  text-align: left;
+}
