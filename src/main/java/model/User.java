@@ -8,7 +8,7 @@ public class User {
     private String fullName;
     private String email;
     private String password;
-    private UserRole role;
+    private UserRole role; 
     private UUID userID;
     private String roleName;
     
@@ -22,6 +22,10 @@ public class User {
         this.email = email;
         this.password = password;
         this.role = role;
+    }
+    
+    public void roleNameTransfer(String roleName) {
+    	//implement Factory Pattern to set role.
     }
 
     // Show the dashboard based on the user's role
