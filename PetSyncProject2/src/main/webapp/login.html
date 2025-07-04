@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <h1>Login</h1>
+    </div>
+
+    <form action="LoginServlet" method="post">
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+
+      <div class="button-group">
+        <button type="submit" class="main-button">Log In</button>
+        <button type="button" onclick="window.location.href='registration.html'" class="main-button">Register</button>
+        <button type="button" onclick="window.location.href='landing.html'" class="main-button">Home</button>
+      </div>
+    </form>
+
+    <p class="forgot-password"><a href="#">Forgot password?</a></p>
+  </div>
+</body>
+</html>
